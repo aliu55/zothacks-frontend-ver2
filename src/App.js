@@ -8,7 +8,7 @@ import '../node_modules/react-vis/dist/style.css';
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 // Website imports for classes you made
-import { UserList } from "app/views";
+import { UserList, UserClub } from "app/views";
 
 function App() {
   return (
@@ -18,6 +18,10 @@ function App() {
           <Route 
             exact path={"/"}
             component={UserList}
+          />
+          <Route 
+            exact path={"/club/:selectedClubName"}
+            component={UserClub}
           />
         </Switch>
       </Router>
