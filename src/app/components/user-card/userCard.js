@@ -20,12 +20,13 @@ function UserCard({ user, number }) {
         <h1>{number}</h1>
       </div>
       <h2>
-        {user.firstName} {user.lastName}
+        {user.clubName}
       </h2>
       <h3>{user.email}</h3>
-      <h4>{user.favoriteStockId}</h4>
+      <h4>{user.meetingTime}</h4>
     </motion.div>
   );
 }
 
 export default UserCard;
+
